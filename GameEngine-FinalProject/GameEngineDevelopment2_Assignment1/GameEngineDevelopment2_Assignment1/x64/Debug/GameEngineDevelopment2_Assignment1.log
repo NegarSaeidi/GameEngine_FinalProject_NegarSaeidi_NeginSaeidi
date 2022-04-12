@@ -1,5 +1,7 @@
-﻿  Game.cpp
-  GameState.cpp
-C:\Users\saeid\OneDrive\Desktop\GEFinal\GameEngine_FinalProject1\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\GameState.cpp(57,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-  GameEngineDevelopment2_Assignment1.vcxproj -> C:\Users\saeid\OneDrive\Desktop\GEFinal\GameEngine_FinalProject1\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\x64\Debug\GameEngineDevelopment2_Assignment1.exe
+﻿  World.cpp
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(64,43): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(66,43): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(73,36): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(79,38): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(89,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameEngineDevelopment2_Assignment1.vcxproj -> D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\x64\Debug\GameEngineDevelopment2_Assignment1.exe

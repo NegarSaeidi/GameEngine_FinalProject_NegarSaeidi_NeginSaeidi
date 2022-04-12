@@ -19,6 +19,7 @@ public:
 		MoveUp,
 		MoveDown,
 		MoveForward,
+		MoveBackward,
 		ActionCount
 	};
 	void					assignKey(Action action,char key);

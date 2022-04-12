@@ -13,7 +13,7 @@ World::World(State* state)
 	, mSceneGraph(new SceneNode(state))
 	, mPlayerAircraft(nullptr)
 	, mSceneLayers()
-	, mWorldBounds(-4.7f, 4.7f, -3.5f, 4.f)
+	, mWorldBounds(-4.2f, 4.2f, 0.1f, 3.f)
 	, mSpawnPostion(0.0f, 0.0f)
 	, mScrollSpeed(-1.f)
 {
@@ -108,14 +108,12 @@ void World::adaptPlayerPosition()
 {
 	// Keep player's position inside the screen bounds, at least borderDistance units from the border
 
-	const float borderDistance = 100.f;
-
 	XMFLOAT3 position = mPlayerAircraft->getWorldPosition();
-	position.x = MathHelper::Clamp(position.x, mWorldBounds.x, mWorldBounds.y);
-	position.y = MathHelper::Clamp(position.y, -0.9f, 3.0f);
-	position.z = MathHelper::Clamp(position.z, mWorldBounds.z, mWorldBounds.w);
+	position.x = std::max(position.x, mWorldBounds.x);
+	position.x = std::min(position.x, mWorldBounds.y);
+	position.y = std::max(position.y, mWorldBounds.z);
+	position.y = std::min(position.y, mWorldBounds.w);
 	mPlayerAircraft->setPosition(position.x, position.y, position.z);
-
 	
 
 }
