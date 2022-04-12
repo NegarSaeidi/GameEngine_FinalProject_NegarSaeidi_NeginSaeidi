@@ -36,5 +36,6 @@ bool PauseState::handleEvent(WPARAM btnState)
 
 void PauseState::CreateScene()
 {
+
 }
 #pragma endregion

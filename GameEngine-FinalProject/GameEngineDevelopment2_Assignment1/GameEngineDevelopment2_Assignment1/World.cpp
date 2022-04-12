@@ -12,9 +12,8 @@ World::World(State* state)
 	: mState(state)
 	, mSceneGraph(new SceneNode(state))
 	, mPlayerAircraft(nullptr)
-	, mBackground(nullptr)
 	, mSceneLayers()
-	, mWorldBounds(-3.f, 3.f, 200.0f, 0.0f)
+	, mWorldBounds(-4.7f, 4.7f, -3.5f, 4.f)
 	, mSpawnPostion(0.0f, 0.0f)
 	, mScrollSpeed(-1.f)
 {
@@ -27,24 +26,24 @@ World::World(State* state)
  */
 void World::update(const GameTimer& gt)
 {
+	for (int i = 0; i < 5; i++)
+	{
 
-	mBackground->move(0.f, 0, mScrollSpeed * gt.DeltaTime());
-
+		mBackground[i]->move(0.f, 0, mScrollSpeed * gt.DeltaTime());
+	}
+	
 	mPlayerAircraft->setVelocity(0.0f, 0.0f, 0.0f);
+	adaptPlayerPosition();
 
 	// Forward commands to scene graph, adapt velocity (scrolling, diagonal correction)
 	while (!mCommandQueue.isEmpty())
 		mSceneGraph->onCommand(mCommandQueue.pop(), gt);
 
-#pragma region step 5
-
-	adaptPlayerVelocity();
+	//adaptPlayerVelocity();
 
 	// Regular update step, adapt position (correct if outside view)
 	mSceneGraph->update(gt);
-	adaptPlayerPosition();
 
-#pragma endregion
 }
 
 void World::draw()
@@ -82,13 +81,16 @@ void World::buildScene()
 
 	mPlayerAircraft->attachChild(std::move(enemy2));
 
+	for (int i = 0; i < 5; i++)
+	{
 
-	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(mState));
-	mBackground = backgroundSprite.get();
-	mBackground->setPosition(0, 0, 0);
-	mBackground->setScale(300, 1, 300);
-	mSceneGraph->attachChild(std::move(backgroundSprite));
-
+		std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(mState));
+		mBackground[i] = backgroundSprite.get();
+		mBackground[i]->setPosition(0, 0, i*10);
+		mBackground[i]->setScale(15, 1, 10);
+		mSceneGraph->attachChild(std::move(backgroundSprite));
+	}
+	
 	mSceneGraph->build();
 
 }
@@ -109,11 +111,13 @@ void World::adaptPlayerPosition()
 	const float borderDistance = 100.f;
 
 	XMFLOAT3 position = mPlayerAircraft->getWorldPosition();
-	position.x = std::max(position.x, mWorldBounds.x);
-	position.x = std::min(position.x, mWorldBounds.y);
-	position.z = std::max(position.y, mWorldBounds.z);
-	position.z = std::min(position.y, mWorldBounds.w);
+	position.x = MathHelper::Clamp(position.x, mWorldBounds.x, mWorldBounds.y);
+	position.y = MathHelper::Clamp(position.y, -0.9f, 3.0f);
+	position.z = MathHelper::Clamp(position.z, mWorldBounds.z, mWorldBounds.w);
 	mPlayerAircraft->setPosition(position.x, position.y, position.z);
+
+	
+
 }
 
 void World::adaptPlayerVelocity()

@@ -34,7 +34,7 @@ private:
     XMFLOAT2                                          mSpawnPostion;
 	float                                             mScrollSpeed;
 	Aircraft*                                         mPlayerAircraft;
-	SpriteNode*                                       mBackground;
+	SpriteNode*                                       mBackground[5];
 	CommandQueue                                      mCommandQueue;
 
 

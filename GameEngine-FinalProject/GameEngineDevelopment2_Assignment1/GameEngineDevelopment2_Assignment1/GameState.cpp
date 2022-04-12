@@ -42,11 +42,13 @@ void GameState::CreateScene()
 {
 	getContext()->game->BuildMaterials();
 	mWorld.buildScene();
-	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(this, "Desert"));
+	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(this, "PausePrompt"));
 	backgroundSprite->setPosition(0, 0.5, 0);
-	backgroundSprite->setScale(4, 2.0, 2);
+	backgroundSprite->setScale(8, 2.0, 6);
 	backgroundSprite->setVelocity(0, 0, 0);
 	mPauseSceneGraph->attachChild(std::move(backgroundSprite));
+
+	
 	mPauseSceneGraph->build();
 
 
