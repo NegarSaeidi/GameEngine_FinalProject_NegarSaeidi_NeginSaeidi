@@ -1,6 +1,7 @@
-/**-------------------------------------------------------------------------
-//Assignment 1
-// author : Negar Saeidi - 101261396
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
 // Aircraft.cpp, builds an aircraft render item
 -------------------------------------------------------------------------*/
 #include "Aircraft.hpp"

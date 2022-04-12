@@ -1,3 +1,11 @@
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
+//Game.cpp
+//Handles the directX computations
+*/
+
 #include "Game.hpp"
 
 #include "StateStack.hpp"
@@ -21,7 +29,7 @@ bool Game::Initialize()
 		return false;
 
 
-	mMainWndCaption = L"Assignment Solution";
+	
 
 	mCamera.SetPosition(0.0f, 10.0f, 0.0f);
 	mCamera.Pitch(3.14f / 2.0f);

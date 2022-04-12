@@ -1,19 +1,39 @@
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
+//TitleState.cpp
+//Creates the title screen of the game
+*/
+
 #include "TitleState.hpp"
 #include "World.hpp"
 #include "Game.hpp"
-
+/**
+ * Constructor(Initializes the variables of the class
+ *@param StateStack* stack, Context* context
+ * @return None
+ */
 TitleState::TitleState(StateStack* stack, Context* context)
 	: State(stack, context)
 
 {
 	CreateScene();
 }
-
+/**
+ * Draws the title scene
+ *@param None
+ * @return void
+ */
 void TitleState::draw()
 {
 	mSceneGraph->draw();
 }
-
+/**
+ * updates the scene accordingly
+ *@param const GameTimer& gt
+ * @return bool
+ */
 bool TitleState::update(const GameTimer& gt)
 {
 	mSceneGraph->update(gt);
@@ -21,7 +41,11 @@ bool TitleState::update(const GameTimer& gt)
 
 	return true;
 }
-
+/**
+ * handles any input by player(if any key pressed -> go to menu)
+ *@param WPARAM btnState
+ * @return bool
+ */
 bool TitleState::handleEvent(WPARAM btnState)
 {
 	
@@ -31,7 +55,11 @@ bool TitleState::handleEvent(WPARAM btnState)
 	
 	return true;
 }
-
+/**
+ *Creates the title screen( background, title)
+ *@param None
+ * @return void
+ */
 void TitleState::CreateScene()
 {
 	getContext()->game->BuildMaterials();

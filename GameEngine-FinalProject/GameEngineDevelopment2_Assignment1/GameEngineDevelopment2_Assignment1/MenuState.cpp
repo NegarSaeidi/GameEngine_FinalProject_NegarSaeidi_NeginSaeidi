@@ -1,6 +1,17 @@
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
+//MenuState.cpp
+//Creates the Menu screen of the game
+*/
 #include "MenuState.hpp"
 #include "Game.hpp"
-
+/**
+ * Constructor(Initializes the variables of the class
+ *@param StateStack* stack, Context* context
+ * @return None
+ */
 MenuState::MenuState(StateStack* stack, Context* context)
 	: State(stack, context)
 	, mOptionIndex(0)
@@ -14,12 +25,20 @@ MenuState::MenuState(StateStack* stack, Context* context)
 		, mOptions[mOptionIndex]->getWorldPosition().y
 		, mOptions[mOptionIndex]->getWorldPosition().z + 1.4);
 }
-
+/**
+ * Draws the menu screen
+ *@param None
+ * @return void
+ */
 void MenuState::draw()
 {
 	mSceneGraph->draw();
 }
-
+/**
+ * updates the scene accordingly
+ *@param const GameTimer& gt
+ * @return bool
+ */
 bool MenuState::update(const GameTimer& gt)
 {
 	mSceneGraph->update(gt);
@@ -29,6 +48,11 @@ bool MenuState::update(const GameTimer& gt)
 	return true;
 	
 }
+/**
+ * handles any input by player(if the first button is selected -> go to gameState, if the second one is selected quit the app)
+ *@param WPARAM btnState
+ * @return bool
+ */
 
 bool MenuState::handleEvent(WPARAM btnState)
 {
@@ -81,7 +105,11 @@ void MenuState::updateOptionText()
 		, mOptions[mOptionIndex]->getWorldPosition().y
 		, mOptions[mOptionIndex]->getWorldPosition().z + 1.4);
 }
-
+/**
+ *Creates the Menu panel( background, title, buttons, selector)
+ *@param None
+ * @return void
+ */
 void MenuState::CreateScene()
 {
 	getContext()->game->BuildMaterials();
@@ -123,7 +151,7 @@ void MenuState::CreateScene()
 	
 
 
-	//TODO: Add arrow sprite
+	
 
 
 

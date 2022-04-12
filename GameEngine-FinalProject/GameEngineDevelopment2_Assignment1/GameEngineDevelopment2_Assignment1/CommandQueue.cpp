@@ -1,6 +1,7 @@
-/**-------------------------------------------------------------------------
-//Assignment 1
-// author : Negar Saeidi - 101261396
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
 // CommandQueue.cpp, this class transports commands to the world and the scene graph
 -------------------------------------------------------------------------*/
 #include "CommandQueue.hpp"

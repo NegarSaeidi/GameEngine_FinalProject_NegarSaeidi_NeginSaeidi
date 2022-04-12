@@ -1,6 +1,7 @@
-/**-------------------------------------------------------------------------
-//Assignment 1
-// author : Negar Saeidi - 101261396
+/*
+-------------------------------------------------------------------------
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
 // Player.cpp, handles player input. previously this was done in Game class
 -------------------------------------------------------------------------*/
 #pragma region step 2

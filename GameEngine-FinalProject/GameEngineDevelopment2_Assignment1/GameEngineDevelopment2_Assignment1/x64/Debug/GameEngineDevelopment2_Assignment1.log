@@ -1,7 +1,19 @@
-﻿  World.cpp
-D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(64,43): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(66,43): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(73,36): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(79,38): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\World.cpp(89,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  GameState.cpp
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\GameState.cpp(92,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  MenuState.cpp
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(26,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(24,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(106,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(104,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(125,31): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(133,31): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(141,36): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\MenuState.cpp(148,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  PauseState.cpp
+  State.cpp
+  StateStack.cpp
+  TitleState.cpp
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\TitleState.cpp(75,45): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\GameEngineDevelopment2_Assignment1\TitleState.cpp(82,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   GameEngineDevelopment2_Assignment1.vcxproj -> D:\T163-Term6\Hooman-Engine\GameEngine-FinalProject-NegarSaeidi-NeginSaeidi\GameEngine-FinalProject\GameEngineDevelopment2_Assignment1\x64\Debug\GameEngineDevelopment2_Assignment1.exe

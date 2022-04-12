@@ -1,7 +1,7 @@
 /*
 -------------------------------------------------------------------------
-//Assignment 1
-// author : Negar Saeidi - 101261396
+//Final Assignment
+// author : Negar Saeidi - 101261396  and  NeginSaeidi - 101261395
 // SpriteNode.cpp
 // Builds a sprite render item
 -------------------------------------------------------------------------*/
